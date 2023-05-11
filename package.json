@@ -1,15 +1,19 @@
 {
-  "name": "web-init-cli",
+  "name": "tymona-cli",
   "version": "1.0.0",
   "description": "",
   "bin": {
-    "init": "bin/init.js"
+    "tymona": "./bin/init.js"
   },
   "dependencies": {
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-url": "^8.0.1",
     "axios": "^1.1.3",
     "cac": "^6.7.12",
     "chalk": "^4.1.2",
     "cli-table3": "^0.6.2",
+    "commander": "^10.0.1",
     "dotenv": "^16.0.1",
     "dotenv-expand": "^8.0.3",
     "ejs": "^3.1.8",
@@ -23,15 +27,20 @@
     "portfinder": "^1.0.29",
     "qs": "^6.9.7",
     "rollup": "^2.64.0",
-    "rollup-plugin-typescript2": "^0.31.1",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "rollup-plugin-uglify": "^6.0.4",
     "rxjs": "^7.5.7",
     "semver": "^7.3.8",
-    "socket.io": "^4.5.1"
+    "socket.io": "^4.5.1",
+    "typescript": "^5.0.4"
   },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c",
+    "dev": "node ./bin/init.js"
   },
-  "author": "",
+  "author": "personal",
   "license": "ISC"
 }
