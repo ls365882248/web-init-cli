@@ -2,6 +2,11 @@
   "name": "tymona-cli",
   "version": "1.0.0",
   "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ls365882248/web-init-cli",
+    "directory": "tymona-cli"
+  },
   "bin": {
     "tymona": "./bin/init.js"
   },
@@ -42,5 +47,5 @@
     "dev": "node ./bin/init.js"
   },
   "author": "personal",
-  "license": "ISC"
+  "license": "MIT"
 }
